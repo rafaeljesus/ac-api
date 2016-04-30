@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+import http from 'http'
+
+import app from '../server'
+
+const port = process.env.PORT || 3000
+
+http.globalAgent.maxSockets = Infinity
+http.createServer(app.callback())
+
+app.listen(port)
+
+console.log(`Ready on ${port}!`)

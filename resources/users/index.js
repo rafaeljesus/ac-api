@@ -9,4 +9,4 @@ export default router
 
 router.post('/v1/users', wrap(async ({ request: { body } }) => {
   return await User.createAsync(body)
-})
+}))

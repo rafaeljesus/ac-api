@@ -24,9 +24,9 @@ const User = Schema({
 
 User.methods = {
   passwordChanged () {
-    return this.password
-      && this.password.length > 0
-      && this.isModified('password')
+    return this.password &&
+      this.password.length > 0 &&
+      this.isModified('password')
   }
 }
 
@@ -35,7 +35,7 @@ User.pre('save', async function (next) {
 
   if (this.isNew) this.createdAt = new Date()
 
-  if (! this.passwordChanged()) return next()
+  if (!this.passwordChanged()) return next()
 
   try {
     this.password = await bcrypt.hashAsync(this.password, 8)
