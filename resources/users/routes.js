@@ -7,6 +7,6 @@ const router = Router()
 
 export default router
 
-router.post('/v1/users', wrap(async ({ request: { body } }) => {
-  return await User.createAsync(body)
-}))
+router.post('/v1/users', wrap(async ({ request: { body } }) =>
+  await User.createAsync(body)
+))

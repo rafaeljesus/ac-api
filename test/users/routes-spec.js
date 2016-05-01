@@ -43,7 +43,7 @@ test('should not create user with empty password', async (t) => {
 test('should not create user with empty email', async (t) => {
   const { error } = await request
   .post('/v1/users')
-  .send({ name , password })
+  .send({ name, password })
   .expect(422)
 
   t.truthy(error.text, 'users validation failed')
