@@ -17,10 +17,16 @@ const User = Schema({
     match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Email inválido'],
     index: { unique: true }
   },
-  password: {type: String, require: true},
+  password: {type: String, required: true},
   createdAt: Date,
   updatedAt: Date
 })
+
+User.statics = {
+  findByEmail (email) {
+    return this.findOneAsync({ email })
+  }
+}
 
 User.methods = {
   passwordChanged () {
