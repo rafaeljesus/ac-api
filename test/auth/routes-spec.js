@@ -8,9 +8,9 @@ const request = supertest(app.listen())
 const password = '12345678'
 let email = 'foobar@gmail.com'
 
-test.afterEach(async () => {
+test.afterEach(async () =>
   await User.removeAsync({ email })
-})
+)
 
 test('should generate api token', async (t) => {
   let email = 'foo@gmail.com'
