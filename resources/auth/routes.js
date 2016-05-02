@@ -19,7 +19,6 @@ router.post('/v1/token', async (ctx) => {
 
     ctx.body = { token: signToken(user._id) }
   } catch (err) {
-    console.log(err)
     ctx.throw(401)
   }
 })
