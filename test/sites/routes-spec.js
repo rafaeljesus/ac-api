@@ -24,9 +24,9 @@ test.before(async () => {
   token = jwt.encode({ id: user._id }, cfg.jwt.secret)
 })
 
-test.after(async () => {
+test.after(async () =>
   await User.removeAsync()
-})
+)
 
 test('should create favorite site', async (t) => {
   const { body } = await request
