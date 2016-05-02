@@ -5,9 +5,9 @@ import User from '../../resources/users/collection'
 const password = '12345678'
 const email = 'foobar@hotmail.com'
 
-test.afterEach(async () => {
+test.afterEach(async () =>
   await User.removeAsync({ email })
-})
+)
 
 test('should check password changed', (t) => {
   const user = new User({ password })
