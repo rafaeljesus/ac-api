@@ -8,6 +8,9 @@
     "test": "NODE_ENV=test nyc --reporter=lcov ava && nyc report",
     "lint": "standard --verbose | snazzy"
   },
+  "bin": {
+    "nyc": "./node_module/.bin/nyc"
+  },
   "author": "Rafael Jesus",
   "license": "ISC",
   "standard": {
