@@ -1,8 +1,7 @@
 import Router from 'koa-router'
-import jwt from 'jwt-simple'
 
 import User from '../users/collection'
-import cfg from '../../config'
+import { signToken } from '../../lib/auth'
 
 const router = Router()
 
@@ -18,10 +17,9 @@ router.post('/v1/token', async (ctx) => {
     const user = await User.findByEmail(body.email)
     if (!user) return ctx.throw(401)
 
-    ctx.body = {
-      token: jwt.encode({ id: user.id }, cfg.jwt.secret)
-    }
+    ctx.body = { token: signToken(user._id) }
   } catch (err) {
+    console.log(err)
     ctx.throw(401)
   }
 })

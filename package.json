@@ -32,7 +32,6 @@
   },
   "dependencies": {
     "bcrypt": "^0.8.6",
-    "bluebird": "^3.3.5",
     "jwt-simple": "^0.5.0",
     "kcors": "^2.1.0",
     "koa": "^2.0.0",
@@ -40,8 +39,7 @@
     "koa-logger": "^2.0.0",
     "koa-router": "^7.0.1",
     "koa-validate": "^1.0.0",
-    "mongoose": "^4.4.14",
-    "passport-jwt": "^2.0.0"
+    "mongoose": "^4.4.14"
   },
   "devDependencies": {
     "babel-polyfill": "^6.7.4",
