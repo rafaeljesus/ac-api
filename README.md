@@ -1,7 +1,6 @@
 ## AC API
 
-[ ![Codeship Status for rafaeljesus/ac-api](https://codeship.com/projects/66e58600-f249-0133-8698-52fb30e9a12d/status?branch=master)](https://codeship.com/projects/149462)
-[![bitHound Overall Score](https://www.bithound.io/github/rafaeljesus/ac-api/badges/score.svg)](https://www.bithound.io/github/rafaeljesus/ac-api)
+[![Build Status](https://travis-ci.org/rafaeljesus/ac-api.svg?branch=master)](https://travis-ci.org/rafaeljesus/ac-api) [![bitHound Overall Score](https://www.bithound.io/github/rafaeljesus/ac-api/badges/score.svg)](https://www.bithound.io/github/rafaeljesus/ac-api)
 [![bitHound Dependencies](https://www.bithound.io/github/rafaeljesus/ac-api/badges/dependencies.svg)](https://www.bithound.io/github/rafaeljesus/ac-api/master/dependencies/npm)
 [![bitHound Dev Dependencies](https://www.bithound.io/github/rafaeljesus/ac-api/badges/devDependencies.svg)](https://www.bithound.io/github/rafaeljesus/ac-api/master/dependencies/npm)
 [![bitHound Code](https://www.bithound.io/github/rafaeljesus/ac-api/badges/code.svg)](https://www.bithound.io/github/rafaeljesus/ac-api)
