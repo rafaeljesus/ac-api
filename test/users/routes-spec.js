@@ -9,9 +9,9 @@ const name = 'Rafael Jesus'
 const email = 'rafaelljesus86@gmail.com'
 const password = '12345678'
 
-test.afterEach(async () => {
+test.afterEach(async () =>
   await User.removeAsync({ email })
-})
+)
 
 test('should create user', async (t) => {
   const { body } = await request
