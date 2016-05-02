@@ -19,7 +19,7 @@
 
 * Clone the repo : `git clone https://github.com/rafaeljesus/ac-api.git`
 * Go to project dir: `cd ac-api`
-* Install dependêncies: `npm i`
+* Install dependencies: `npm i`
 * Run server: `npm start`
 * Run tests: `npm test`
 
